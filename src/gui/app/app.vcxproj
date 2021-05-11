@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\modules\FileManager\FileManager.cpp" />
+    <ClCompile Include="..\..\modules\Interpreter\Interpreter.cpp" />
+    <ClCompile Include="..\..\modules\Interpreter\LabelParser.cpp" />
+    <ClCompile Include="..\..\modules\LockManager\Lock.cpp" />
+    <ClCompile Include="..\..\modules\LockManager\LockManager.cpp" />
+    <ClCompile Include="..\..\modules\MemoryManager\MemoryManager.cpp" />
+    <ClCompile Include="..\..\modules\ProcessManager\PCB.cpp" />
+    <ClCompile Include="..\..\modules\ProcessManager\ProcessManager.cpp" />
+    <ClCompile Include="..\..\modules\Scheduler\Scheduler.cpp" />
+    <ClCompile Include="..\..\Shell.cpp" />
+    <ClCompile Include="..\..\SztosException.cpp" />
+    <ClCompile Include="App.cpp" />
+    <ClCompile Include="CommandButton.cpp" />
+    <ClCompile Include="InputField.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="SelbaWard\ConsoleScreen.cpp" />
+    <ClCompile Include="ShutdownState.cpp" />
+    <ClCompile Include="Sounds.cpp" />
+    <ClCompile Include="StartState.cpp" />
+    <ClCompile Include="StateMaschine.cpp" />
+    <ClCompile Include="Widgets\Button.cpp" />
+    <ClCompile Include="Widgets\DateTimeWidget.cpp" />
+    <ClCompile Include="Widgets\StartMenu.cpp" />
+    <ClCompile Include="Widgets\Taskbar.cpp" />
+    <ClCompile Include="Widgets\Wallpaper.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\modules\FileManager\FileManager.h" />
+    <ClInclude Include="..\..\modules\Interpreter\Interpreter.hpp" />
+    <ClInclude Include="..\..\modules\Interpreter\LabelParser.hpp" />
+    <ClInclude Include="..\..\modules\LockManager\Lock.hpp" />
+    <ClInclude Include="..\..\modules\LockManager\LockManager.hpp" />
+    <ClInclude Include="..\..\modules\MemoryManager\MemoryManager.h" />
+    <ClInclude Include="..\..\modules\ProcessManager\PCB.hpp" />
+    <ClInclude Include="..\..\modules\ProcessManager\ProcessManager.hpp" />
+    <ClInclude Include="..\..\modules\Scheduler\Scheduler.hpp" />
+    <ClInclude Include="..\..\Shell.hpp" />
+    <ClInclude Include="..\..\SztosException.hpp" />
+    <ClInclude Include="App.h" />
+    <ClInclude Include="CommandButton.h" />
+    <ClInclude Include="Definitions.h" />
+    <ClInclude Include="InputField.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="resource1.h" />
+    <ClInclude Include="SelbaWard\Common.h" />
+    <ClInclude Include="SelbaWard\ConsoleScreen.h" />
+    <ClInclude Include="ShutdownState.h" />
+    <ClInclude Include="Sounds.h" />
+    <ClInclude Include="StartState.h" />
+    <ClInclude Include="State.h" />
+    <ClInclude Include="StateMaschine.h" />
+    <ClInclude Include="SystemHandler.h" />
+    <ClInclude Include="Widgets\Button.h" />
+    <ClInclude Include="Widgets\DateTimeWidget.h" />
+    <ClInclude Include="Widgets\StartMenu.h" />
+    <ClInclude Include="Widgets\Taskbar.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app1.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resources\icon64.ico" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{0BBF63BE-98B0-42D5-9429-5C4B82676A13}</ProjectGuid>
+    <RootNamespace>app</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>SFML_STATIC;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\Mateusz Kuźniak\Desktop\szt-OS\src\gui\SFML\include;C:\Users\rochg\dev\C++\szt-OS\src\gui\SFML\include;C:\Users\Bart\Desktop\szt-OS\src\gui\SFML\include;C:\Users\Dell\Desktop\szt-OS\src\gui\SFML\include;D:\Plikipulpit\Projekty C i C++\SFML-2.5.1_x64\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\Mateusz Kuźniak\Desktop\szt-OS\src\gui\SFML\lib;C:\Users\rochg\dev\C++\szt-OS\src\gui\SFML\lib;C:\Users\Bart\Desktop\szt-OS\src\gui\SFML\lib;C:\Users\Dell\Desktop\szt-OS\src\gui\SFML\lib;D:\Plikipulpit\Projekty C i C++\SFML-2.5.1_x64\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-graphics-s-d.lib;sfml-window-s-d.lib;sfml-system-s-d.lib;sfml-audio-s-d.lib;opengl32.lib;freetype.lib;winmm.lib;gdi32.lib;openal32.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>SFML_STATIC;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\Mateusz Kuźniak\Desktop\szt-OS\src\gui\SFML\include;C:\Users\rochg\dev\C++\szt-OS\src\gui\SFML\include;C:\Users\Bart\Desktop\szt-OS\src\gui\SFML\include;C:\Users\Dell\Desktop\szt-OS\src\gui\SFML\include;D:\Plikipulpit\Projekty C i C++\SFML-2.5.1_x64\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\Mateusz Kuźniak\Desktop\szt-OS\src\gui\SFML\lib;C:\Users\rochg\dev\C++\szt-OS\src\gui\SFML\lib;C:\Users\Bart\Desktop\szt-OS\src\gui\SFML\lib;C:\Users\Dell\Desktop\szt-OS\src\gui\SFML\lib;D:\Plikipulpit\Projekty C i C++\SFML-2.5.1_x64\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-main.lib;sfml-graphics-s.lib;sfml-window-s.lib;sfml-system-s.lib;sfml-audio-s.lib;opengl32.lib;freetype.lib;winmm.lib;gdi32.lib;openal32.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
